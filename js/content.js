@@ -10,7 +10,8 @@
     // sending obj as parameter to functions
     loadIndex(objData.benefits);
     loadPosts(objData.posts);
-    loadProducts(objData.products);     
+    loadProducts(objData.products);
+    loadEvents(objData.events);   
     
   };
 
@@ -90,6 +91,39 @@ function loadPosts(_data){
 
  }
 
+
+ function loadEvents(_data) {
+    var data = _data;
+    var container = document.querySelector('#events table tr');
+    var dayList = document.querySelector('#events ol');
+    var events = '';
+    var eventsDate = '';
+
+     // Checking if the element is on the page
+    if(container !== null){
+
+        for (i = 0; i < data.length; i++) {
+
+         events += '<td> <h4>' + data[i].title +'</h4></td>';
+         events += '<td> <h4>' + data[i].location +'</h4></td>';
+         events += '<td> <p>' + data[i].text +'</p></td>';
+
+
+         eventsDate += '<li>';
+         eventsDate += '<a>' + data[i].date+ '</a>';
+         eventsDate += '</li>';
+
+
+        }
+
+        // print the html
+         container.innerHTML = events ;
+         dayList.innerHTML = eventsDate;
+
+       
+    }
+
+ }
  
 
 
