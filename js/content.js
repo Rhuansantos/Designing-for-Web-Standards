@@ -8,6 +8,7 @@
 
 
     // sending obj as parameter to functions
+    loadIndex(objData.benefits);
     loadPosts(objData.posts);
     loadProducts(objData.products);     
     
@@ -15,6 +16,29 @@
 
   objRequest.send();
 
+function loadIndex(_data){
+
+// setting local variables
+    var data = _data;
+    var container = document.querySelector('#benefits ul');
+    var benefits = '';
+
+    // Checking if the element is on the page
+    if(container !== null){
+
+        for (i = 0; i < data.length; i++) {
+         benefits += '<li>';
+         benefits += '<h3>' + data[i].title + '</h3>';
+         benefits += '<p>' + data[i].description + '</p>';
+         benefits += '</li>';
+        }
+
+        // print the html
+         container.innerHTML = benefits;
+       
+    }
+
+}
 
 
 function loadPosts(_data){
