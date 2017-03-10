@@ -27,7 +27,7 @@ function loadIndex(_data){
     // Checking if the element is on the page
     if(container !== null){
 
-        for (i = 0; i < data.length; i++) {
+        for (var i = 0; i < data.length; i++) {
          benefits += '<li>';
          benefits += '<h3>' + data[i].title + '</h3>';
          benefits += '<p>' + data[i].description + '</p>';
@@ -51,7 +51,7 @@ function loadPosts(_data){
     // Checking if the element is on the page
     if(container !== null){
 
-        for (i = 0; i < data.length; i++) {
+        for (var i = 0; i < data.length; i++) {
          posts += '<article>';
          posts += '<img src="' + data[i].imageURL + '" alt="">';
          posts += '<h1>' + data[i].title + '</h1>';
@@ -74,7 +74,7 @@ function loadPosts(_data){
      // Checking if the element is on the page
     if(container !== null){
 
-        for (i = 0; i < data.length; i++) {
+        for (var i = 0; i < data.length; i++) {
          products += '<li>';
          products += '<img src="' + data[i].imageURL + '" alt="">';
          products += '<h1>' + data[i].title + '</h1>';
@@ -102,7 +102,7 @@ function loadPosts(_data){
      // Checking if the element is on the page
     if(container !== null){
 
-        for (i = 0; i < data.length; i++) {
+        for (var i = 0; i < data.length; i++) {
 
          events += '<td> <h4>' + data[i].title +'</h4></td>';
          events += '<td> <h4>' + data[i].location +'</h4></td>';
