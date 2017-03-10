@@ -7,10 +7,9 @@
       console.log(objData);
 
 
-
+    // sending obj as parameter to functions
     loadPosts(objData.posts);
-
-     
+    loadProducts(objData.products);     
     
   };
 
@@ -41,5 +40,32 @@ function loadPosts(_data){
     }
 
  }
+
+ function loadProducts(_data) {
+    var data = _data;
+    var container = document.querySelector('#shop ul');
+    var products = '';
+
+     // Checking if the element is on the page
+    if(container !== null){
+
+        for (i = 0; i < data.length; i++) {
+         products += '<li>';
+         products += '<img src="' + data[i].imageURL + '" alt="">';
+         products += '<h1>' + data[i].title + '</h1>';
+         products += '<p>' + data[i].description;
+         products += '<strong>' + data[i].price + '</strong>';
+         products += '</p>';
+         products += '</li>';
+        }
+
+        // print the html
+         container.innerHTML = products;
+       
+    }
+
+ }
+
+ 
 
 
