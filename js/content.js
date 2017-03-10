@@ -4,8 +4,6 @@
   objRequest.onload = function() {
   
       var objData = JSON.parse(objRequest.responseText);
-      console.log(objData);
-
 
     // sending obj as parameter to functions
     loadIndex(objData.benefits);
