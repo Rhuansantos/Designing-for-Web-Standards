@@ -1,0 +1,57 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	font: 1.6rem/1.5 "Program OT", Arial, sans-serif;
+	background: #333333;
+}
+
+section, main {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+
+#bikes article{
+	width: calc(100%/3 - 4rem / 3);
+	min-height: 200px;
+	float: left;
+	/*box-sizing: border-box;*/
+	text-align: center;
+	font-weight: bold;
+
+}
+#bikes article:nth-of-type(1n){
+	background-image: url("../images/bikes.jpg");
+	background-size: 100% 100%;
+}
+
+#bikes article:nth-of-type(2n){
+	background: url("../images/speedometer.jpg") center;
+}
+
+#bikes article:nth-of-type(3n){
+	background: url("../images/backpack.jpg") center;
+}
+
+#bikes article:not(:nth-of-type(3n)) {
+	margin-right: 2rem;
+}
+
+#bikes > article h1{
+	text-transform: uppercase;
+	background: black;
+	margin-top: 50px;
+	padding: 10px;
+	margin-bottom: 40px;
+	color: white;
+	opacity: 0.8;
+	font-size: 2.4rem;
+}
+
+#bikes > article a{
+	color: white;
+	background: #cc3333;
+	padding: 10px;
+	font-size: 1.2rem;
+}
