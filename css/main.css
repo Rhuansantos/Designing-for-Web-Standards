@@ -247,7 +247,49 @@ section::after{
 #shop ul li img{
 	width: 100%;
 }
+/* ============================= Blog ============================= */
+#blog{
+	background: #ffffff;
+}
+#categories{
+	width: 280px;
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 20px;
+	background: #dddddd;
+	float: left;
+}
+#categories h1{
+	font-weight: bold;
+	font-size: 1.8rem;
+}
+#categories ul li{
+	
+	margin-bottom: 10px;
+}
 
+#post{
+	width: 660px;
+	float: right;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+#post article{
+	margin-bottom: 20px;
+}
+#post h1{
+	font-weight: bold;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.8rem;
+}
+
+
+#post img{
+	width: 100%;
+	max-height: 300px;
+
+}
 /* ============================= Contact ============================= */
 #contact{
 	margin-top: 100px;
@@ -262,7 +304,7 @@ section::after{
 }
 #contact-info{
 	width: 280px;
-	height: 100vh;
+	min-height: 100vh;
 	margin-top: 30px;
 	padding: 20px;
 	margin-left: 20px;
