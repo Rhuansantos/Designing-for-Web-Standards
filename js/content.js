@@ -92,7 +92,7 @@ function loadPosts(_data){
 
  function loadEvents(_data) {
     var data = _data;
-    var container = document.querySelector('#events table tr');
+    var container = document.querySelector('#events table');
     var dayList = document.querySelector('#events ol');
     var events = '';
     var eventsDate = '';
@@ -100,11 +100,18 @@ function loadPosts(_data){
      // Checking if the element is on the page
     if(container !== null){
 
+       events +=  '<td><h1>Title</h1></td>';
+       events +=  '<td><h1>Location</h1></td>';
+       events +=  '<td><h1>Description</h1></td>';
+
         for (var i = 0; i < data.length; i++) {
 
-         events += '<td> <h4>' + data[i].title +'</h4></td>';
-         events += '<td> <h4>' + data[i].location +'</h4></td>';
+
+         events += '<tr>';
+         events += '<td> <h2>' + data[i].title +'</h2></td>';
+         events += '<td> <h2>' + data[i].location +'</h2></td>';
          events += '<td> <p>' + data[i].text +'</p></td>';
+         events += '</tr>';
 
 
          eventsDate += '<li>';

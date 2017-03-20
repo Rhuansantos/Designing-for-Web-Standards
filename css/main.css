@@ -22,6 +22,7 @@ nav{
 	width: 100%; 
 	border-top: 5px solid #cc3333;
 }
+
 nav ul{
 	max-width: 960px;
 	margin: 0 auto;
@@ -42,7 +43,7 @@ nav ul li a:hover{
 }
 
 nav  ul  li:nth-child(6) a{
-	padding: 15px;
+	 /*padding: 15px;*/
 	background: #c0392b;
 }
 
@@ -247,6 +248,54 @@ section::after{
 #shop ul li img{
 	width: 100%;
 }
+
+/* ============================= Club Event ============================= */
+#events{
+	background: #ffffff;
+}
+#events ol {
+	width: 840px;
+	margin: 0 auto;
+}
+#events ol li{
+	display: inline-block;
+	width: 110px;
+	height: 60px;
+	margin-left: 20px;
+	background: red;
+	text-align: center;
+}
+
+#events table{
+	margin-top: 100px;
+}
+
+#events table tr{ 
+	
+	border: solid 1px #dddddd;
+}
+#events table tr:hover{ 
+	background: #dddddd;
+}
+#events table tr h1{
+	font-weight: bold;
+	font-size: 2rem;
+} 
+
+#events table td{
+	width: calc(100%/3);
+	float: left;
+	padding: 20px;
+	
+}
+
+#events table td h2{
+	font-weight: bold;
+	font-size: 1.6rem;
+	padding-top: 20px;
+}
+
+
 /* ============================= Blog ============================= */
 #blog{
 	background: #ffffff;
