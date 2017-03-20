@@ -8,6 +8,15 @@ body {
 a{
 	color: white;
 }
+
+h1{
+	font-size: 2.2rem;
+	text-transform: uppercase;
+}
+h1 strong{
+	display: block;
+	font-weight: bold;
+}
 nav{
 	width: 100%; 
 	border-top: 5px solid #cc3333;
@@ -38,9 +47,14 @@ nav  ul  li:nth-child(6) a{
 
 
 
-section, main, footer {
+section, footer {
 	max-width: 960px;
 	margin: 0 auto;
+}
+section::after{
+	content: "";
+	display: block;
+	clear: both;
 }
 
 
@@ -64,6 +78,9 @@ section, main, footer {
 
 
 /*second Section*/
+#bikes{
+	margin-bottom: 50px;
+}
 #bikes article{
 	width: calc(100%/3 - 4rem / 3);
 	min-height: 200px;
@@ -113,6 +130,48 @@ section, main, footer {
 	display: none;
 }
 
+#shop{
+	width: 100%;
+	min-height: 1000px;
+	height: auto;
+	background: white;
+}
+#shop header, #shop ul{
+	width: 960px;
+	margin: 0 auto;
+}
+#shop header h1{
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+
+#shop header h1 strong{
+	
+}
+
+
+#shop ul li {
+	width: calc(100%/4 - 4rem / 3);
+	height: 500px;
+	border: solid 2px red;
+	float: left;
+	margin-bottom: 20px;
+}
+
+#shop ul li:not(:nth-child(4n+1)) {
+	margin-left: 10px;
+}
+
+/*#shop ul li:not(:first-child) {
+	margin-left: 1.25rem;
+}*/
+
+
+#shop ul li img{
+	width: 100%;
+}
+
+
 /*Footer*/
 
 footer ul{
@@ -122,21 +181,15 @@ footer ul{
 	display: none;
 }
 
-footer p::before{
-	content: "";
-	display: block;
-	margin-bottom: 10px;
-	border-top: solid 1px #666666;
-}
-
 footer p{
 	width: 100%;
 	color: #666666;
 	clear: both;
 	text-align: left;
 	font-size: 1.4rem;
-	margin-right: 30%;
-	margin-bottom: 20px;
+	margin: 1.875rem 0 1.25rem 0;
+	border-top: solid 1px #666666;
+	padding-top: 10px;
 }
 
 footer  p  a{
