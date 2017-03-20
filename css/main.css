@@ -424,7 +424,7 @@ footer ul{
 	width: calc(100%/4);
 	float: left;
 	font-size: 1.4rem;
-	display: none;
+	/*display: none;*/
 }
 
 footer p{
