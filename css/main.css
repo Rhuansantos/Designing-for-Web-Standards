@@ -18,18 +18,18 @@ h1 strong{
 	display: block;
 	font-weight: bold;
 }
-nav{
+#navigation{
 	width: 100%; 
 	border-top: 5px solid #cc3333;
 }
 
-nav ul{
+#navigation ul{
 	max-width: 960px;
 	margin: 0 auto;
 	height: 45px;
 }
 
-nav ul li a{
+#navigation ul li a{
 	float: left;
 	margin-left: 40px;
 	font-size: 1.4rem;
@@ -38,18 +38,18 @@ nav ul li a{
 	font-weight: bold;
 	padding: 12px;
 }
-nav ul li a:hover{
+#navigation ul li a:hover{
 	 background-color: rgba(0, 0, 0, 0.3);
 }
 
-nav  ul  li:nth-child(6) a{
+#navigation  ul  li:nth-child(6) a{
 	 /*padding: 15px;*/
 	background: #c0392b;
 }
 
 
 
-section:not(#benefits), footer {
+section:not(#benefits) {
 	max-width: 960px;
 	margin: 0 auto;
 }
@@ -420,35 +420,121 @@ section::after{
 
 /* ============================= Footer ============================= */
 
-footer ul{
-	width: calc(100%/4);
-	float: left;
-	font-size: 1.4rem;
-	/*display: none;*/
+footer>nav>ul>li, footer>nav>ul>li>a {
+ 	font-weight: bold;
+    text-transform: uppercase;
+    line-height: 3.2rem;
+    color: white;
 }
 
-footer p{
-	width: 100%;
-	color: #666666;
-	clear: both;
-	text-align: left;
-	font-size: 1.4rem;
-	margin: 1.875rem 0 1.25rem 0;
-	border-top: solid 1px #666666;
-	padding-top: 10px;
+footer{
+    background-color: #111;
+    padding:6rem 10%;
+    font-size: 1.3rem;
 }
 
-footer  p  a{
-	color: #666666;
-	margin-left: 30px;
+footer>nav::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+footer>nav>ul{
+    float: left;
+    width: calc(100%/5 - 1rem);
 }
 
 
-footer  p  a:nth-child(1){
-	/*margin-left: 220px;*/
+
+footer>nav>ul>li>ul>li>a{
+    color: rgba(255,255,255, 0.6);
+    font-weight: normal;
+    text-transform: capitalize;
 }
-/*footer p a:before{
-	content: "";
-	display: block;
-	float: right;
-}*/
+
+footer ul li a:hover{
+    opacity: 0.6;
+    cursor:pointer;
+}
+
+footer .social{
+    float: right;
+    text-align: right;
+}
+
+footer .social li>ul{
+    float: right;
+    display: block;
+    width: 91%;
+    text-align: left;
+}
+
+footer .social li>ul>li{
+    float: left;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+footer .social li>ul>li a{
+    display: block;
+    text-indent: -9999px;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    transition: all 200ms ease-out;
+}
+
+footer .social li>ul>li a:hover{
+    opacity: 1;
+}
+
+footer .social li>ul>li a[href*='facebook']{
+    background-image: url('../images/facebook.png');
+}
+
+footer .social li>ul>li a[href*='twitter']{
+    background-image: url('../images/twitter.png');
+}
+
+footer .social li>ul>li a[href*='instagram']{
+    background-image: url('../images/instagram.png');
+}
+
+footer .social li>ul>li a[href*='google']{
+    background-image: url('../images/google.png');
+}
+footer .social li>ul>li a[href*='youtube']{
+    background-image: url('../images/youtube.png');
+}
+
+footer section{
+    margin-top: 3rem;
+    padding-top: 4rem;
+}
+footer section {
+    display: block;
+    border-top: 1px solid rgba(255,255,255, 0.6);
+    color: rgba(255,255,255, 0.8);
+}
+
+footer section p{
+    float: left;
+    width: 50%;
+}
+
+footer section ul{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+footer section ul li{
+    display: inline-block;
+}
+
+footer section ul li a{
+    color: rgba(255,255,255, 0.8);
+    padding: 0 1rem;
+}
