@@ -10,8 +10,9 @@ a{
 }
 
 h1{
-	font-size: 2.2rem;
+	font-size: 2.6rem;
 	text-transform: uppercase;
+	display: block;
 }
 h1 strong{
 	display: block;
@@ -47,7 +48,7 @@ nav  ul  li:nth-child(6) a{
 
 
 
-section, footer {
+section:not(#benefits), footer {
 	max-width: 960px;
 	margin: 0 auto;
 }
@@ -77,9 +78,11 @@ section::after{
 
 
 
-/*second Section*/
+/* ============================= Bikes ============================= */
+
 #bikes{
 	margin-bottom: 50px;
+	min-height: 250px;
 }
 #bikes article{
 	width: calc(100%/3 - 4rem / 3);
@@ -125,17 +128,64 @@ section::after{
 	font-size: 1.2rem;
 }
 
+/* ============================= Benefits ============================= */
+
 
 #benefits{
-	display: none;
+
+}
+#benefits h1{
+	text-align: center;
+	color: white;
+} 
+#benefits ul{
+	max-width: 960px;
+	margin: 0 auto;
 }
 
-#shop{
+#benefits ul li::before{
+	content: url("../images/truck.png");
+	width: 50px;
+	height: 50px;
+	border: solid 3px red;
+	padding: 90px 0px 10px 80px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+#benefits ul li{
+	width: calc(100%/3 - 4rem / 3);
+	float: left;
+	min-height: 200px;
+	border: solid 1px red;
+	text-align: center;
+}
+
+#benefits ul li h3{
+	margin-top: 80px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	font-size: 2.2rem;
+}
+#benefits ul li p{
+	color: #dddddd;
+}
+#benefits form{
+	/*//float: right;*/
+	display: block;
+}
+/* ============================= Shop ============================= */
+
+
+#shop {
 	width: 100%;
 	min-height: 1000px;
 	height: auto;
 	background: white;
 }
+
 #shop header, #shop ul{
 	width: 960px;
 	margin: 0 auto;
@@ -199,7 +249,7 @@ section::after{
 }
 
 
-/*Footer*/
+/* ============================= Footer ============================= */
 
 footer ul{
 	width: calc(100%/4);
