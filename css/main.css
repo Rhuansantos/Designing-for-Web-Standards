@@ -3,7 +3,7 @@ html {
 }
 body {
 	font: 1.6rem/1.5 "Program OT", Arial, sans-serif;
-	background: #333333;
+	background: #444444;
 }
 a{
 	color: white;
@@ -42,7 +42,7 @@ nav ul li a:hover{
 
 nav  ul  li:nth-child(6) a{
 	padding: 15px;
-	background: #cc3333;
+	background: #c0392b;
 }
 
 
@@ -143,19 +143,46 @@ section::after{
 #shop header h1{
 	padding-top: 20px;
 	margin-bottom: 30px;
+	color: #444444;
+	font-weight: 400;
 }
 
 #shop header h1 strong{
-	
+	color: black;
+	font-weight: bold;
 }
 
 
+#shop ul li img{
+	min-height: 200px;
+	padding: 5px;
+}
+
 #shop ul li {
 	width: calc(100%/4 - 4rem / 3);
-	height: 500px;
-	border: solid 2px red;
+	height: 370px;
+	border: solid 0.5px white;
 	float: left;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+}
+
+#shop ul li:hover {
+	border: solid 0.5px #DDDDDD;
+}
+#shop ul li p{
+	color: #666666;
+	padding: 0px 2px 0 5px;
+}
+#shop ul li p strong{
+	display: block;
+	font-weight: bold;
+	padding-top: 7px;
+}
+
+#shop ul li h1{
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding: 5px;
 }
 
 #shop ul li:not(:nth-child(4n+1)) {
