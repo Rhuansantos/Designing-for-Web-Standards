@@ -251,7 +251,9 @@ section::after{
 
 /* ============================= Shop Page============================= */
 #shop-container{
+
 	background: #ffffff;
+	border: solid 1px red;
 }
 #shop-container::after{
 	content: "";
@@ -295,8 +297,9 @@ section::after{
 
 
 #shop ul li img{
-	min-height: 200px;
+	max-height: 150px;
 	padding: 5px;
+	object-fit: cover;
 }
 
 #shop ul li::before{
