@@ -372,6 +372,52 @@ section::after{
 	width: 100%;
 }
 
+#shop ul .rating{
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 15px;
+}
+
+
+#shop meter{
+    text-align: right;
+}
+
+.rating{
+    font-size: 2.40rem;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background-image: url('../images/ratings.png');
+	background-repeat: no-repeat;
+	background-size: auto 17rem;
+	background-position: left 0;
+}
+
+.rating[data-rating="1"]{
+	background-position: left -5.8rem;
+}
+
+.rating[data-rating="2"]{
+	background-position: left -7.8rem;
+}
+
+.rating[data-rating="3"]{
+	background-position: left -9.3rem;
+}
+
+
+.rating[data-rating="4"]{
+	background-position: left -10.9rem;
+}
+
+.rating[data-rating="5"]{
+	background-position: left -13.9rem;
+}
+
 /* ============================= Club Event ============================= */
 #events{
 	max-width: 960px;
