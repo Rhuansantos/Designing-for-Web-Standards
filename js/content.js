@@ -26,10 +26,28 @@ function loadIndex(_data){
     if(container !== null){
 
         for (var i = 0; i < data.length; i++) {
+
+
          benefits += '<li>';
          benefits += '<h3>' + data[i].title + '</h3>';
          benefits += '<p>' + data[i].description + '</p>';
+
+
+          if (i == 2) {
+                    benefits +=  '<form>';
+                    benefits +=  '<p><label for="email">email:</label></p>';
+                    benefits +=  '<p><input type="text" placeholder="name@example.com" name="email"></p>';
+                    benefits +=  '<p><button type=submit>sing up</button></p>'
+                    benefits +=  '</form>';
+
+                    
+                }
          benefits += '</li>';
+
+
+
+
+
         }
 
         // print the html
@@ -73,7 +91,7 @@ function loadPosts(_data){
     if(container !== null){
 
         for (var i = 0; i < data.length; i++) {
-         products += '<li>';
+         products += '<li class="sale">';
          products += '<img src="' + data[i].imageURL + '" alt="">';
          products += '<h1>' + data[i].title + '</h1>';
          products += '<p>' + data[i].description;

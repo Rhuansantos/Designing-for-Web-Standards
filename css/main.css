@@ -150,6 +150,8 @@ section::after{
     margin-right: 1rem;
 }
 
+
+
 #benefits {
   background: #111111;
   padding: 7rem 0px;
@@ -276,10 +278,42 @@ section::after{
 }
 
 
+
+
 #shop ul li img{
 	min-height: 200px;
 	padding: 5px;
 }
+
+#shop ul li::before{
+    content: "Sale";
+/*    width: 30px;
+    height: 20px;
+    border: solid 1px red;*/
+    position: relative;
+    background: #C0392B;
+    color: white;
+    z-index: 1;
+    left: 0.6rem;
+    top:1.6rem;
+    padding: 0.7rem 1.5rem;
+
+
+
+ 
+}
+
+/*#shop ul li:after{
+    content: "";
+    position: relative;
+    top: 1.6rem;
+    left: 6.8rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3.7rem 1.5rem 0 0;
+    border-color: #C0392B transparent transparent transparent;
+}*/
 
 #shop ul li {
 	width: calc(100%/4 - 4rem / 3);
