@@ -251,25 +251,35 @@ section::after{
 
 /* ============================= Shop Page============================= */
 #shop-container{
-
+	width: 100%;
 	background: #ffffff;
-	border: solid 1px red;
 }
-#shop-container::after{
-	content: "";
-	height: 20px;
-	margin-bottom: 80px;
+.shop-full-page{
+	width: 1000px;
+	margin: 0 auto;
 }
 
 #shop-menu{
 	width: 200px;
-	border: solid 1px red;
+	margin-left: 30px;
+	margin-top: 20px;
+	/*border: solid 1px red;*/
 	float: left;
-	margin-left: 10%;
+}
+#shop-menu p {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #C0392B;
+}
+
+#shop-menu ul li, #shop-menu ol li{
+	margin-bottom: 10px;
+	font-size: 1.6rem;
+}
+
 }
 /* ============================= Shop ============================= */
 #shop {
-	width: 100%;
 	min-height: 1000px;
 	height: auto;
 	background: white;
@@ -282,6 +292,7 @@ section::after{
 #shop header h1{
 	padding-top: 20px;
 	margin-bottom: 30px;
+	line-height: 1.7rem;
 	color: #444444;
 	font-weight: 400;
 }
@@ -292,8 +303,6 @@ section::after{
 	line-height: 1em;
 	font-weight: bold;
 }
-
-
 
 
 #shop ul li img{
@@ -320,17 +329,6 @@ section::after{
  
 }
 
-/*#shop ul li:after{
-    content: "";
-    position: relative;
-    top: 1.6rem;
-    left: 6.8rem;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 3.7rem 1.5rem 0 0;
-    border-color: #C0392B transparent transparent transparent;
-}*/
 
 #shop ul li {
 	width: calc(100%/4 - 4rem / 3);
@@ -519,6 +517,7 @@ section::after{
 #post img{
 	width: 100%;
 	max-height: 300px;
+	object-fit: cover;
 
 }
 /* ============================= Contact ============================= */
