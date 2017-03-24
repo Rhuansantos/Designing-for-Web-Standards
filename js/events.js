@@ -1,6 +1,8 @@
 // current URL
 var currentUrl = window.location.pathname;
 
+console.log(currentUrl);
+
 
 // Form variables
 var userName = document.querySelector('#name');
@@ -10,7 +12,7 @@ var comment = document.querySelector('#comment');
 
 // controler
 
-if(currentUrl == "/blog.html" || currentUrl == "/blog.html/"){
+if(currentUrl == "/Designing-for-Web-Standards/blog.html"){
 
 	alert("oi");
 }
