@@ -48,6 +48,11 @@ h1 strong{
 }
 
 
+.add-to-cart{
+	padding: 5px;
+	background: #C0392B;
+	color: white;
+}
 
 section {
 	margin: 0 auto;

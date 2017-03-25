@@ -1,3 +1,7 @@
+
+window.onload = function(){
+
+
 // current URL
 var currentUrl = window.location.pathname;
 
@@ -9,12 +13,6 @@ var website	= document.querySelector('#website');
 var comment = document.querySelector('#comment');
 var submit = document.querySelector('input[type="submit"]');
 
-// controler
-
-if(currentUrl == "/Designing-for-Web-Standards/blog.html" || currentUrl == "/FullSail/Designing-for-Web-Standards/blog.html"){
-
-	blogPagination();
-}
 
 if(userName !== null && email !== null && website !== null && comment !== null) {
 
@@ -44,8 +42,41 @@ function formValidation(event){
 }
 
 
-// function blogPagination(){
-	
-// 	var blogArticles = document.querySelector('#post article');
 
-// }
+var products = 1;
+
+function addCart(event){
+
+
+	var element = "<h4>" + products++ + "</h4>";	
+
+	var target = event.target;
+    var parent = target.parentElement;
+    var myCart = document.querySelector('.my-cart');
+    var number = document.querySelector('#number');
+   
+
+
+ 	number.insertAdjacentHTML('beforeend', element);
+
+ 	
+
+}
+
+
+
+var buttonAddCart = document.querySelectorAll('.add-to-cart');
+
+ for (var i = 0; i < buttonAddCart.length; i++) {
+        var button = buttonAddCart[i];
+        button.addEventListener('click', addCart);
+        console.log(button);
+    }
+
+
+
+
+};
+
+
+
