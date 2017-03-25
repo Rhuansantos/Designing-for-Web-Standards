@@ -92,7 +92,7 @@ function loadPosts(_data){
 
         for (var i = 0; i < data.length; i++) {
          products += '<li class="sale">';
-         // products += '<img src="' + data[i].imageURL + '" alt="">';
+         products += '<img src="' + data[i].imageURL + '" alt="">';
          products += '<p class="rating" data-rating="'+ data[i].rating +'"><meter min="0" max="5" value="'+ data[i].rating +'"></meter></p>';
          products += '<h1>' + data[i].title + '</h1>';
          products += '<p>' + data[i].description;
